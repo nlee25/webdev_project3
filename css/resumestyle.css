@@ -1,0 +1,425 @@
+body.resume-page, html {
+    margin: 0;
+    padding: 0;
+}
+
+body.resume-page {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/wallpaperdotsEX.jpg');
+    background-size: 50%; 
+    background-position: top left; 
+    background-repeat: repeat; 
+}
+
+
+body.resume-page #linklist {
+    display: flex;
+    justify-content: flex-end; 
+    background-color: #333; 
+    padding: 10px 20px;
+    width: 100%; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+}
+
+
+body.resume-page #linklist ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+body.resume-page #linklist li {
+    margin: 0 15px;
+}
+
+body.resume-page #linklist a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+
+body.resume-page #linklist a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+body.resume-page .container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+body.resume-page #info-block {
+    width: 1000px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px auto; 
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+body.resume-page #coursework {
+    width: 45%; 
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 10px auto 0; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+body.resume-page #work_experience {
+    width: 45%; 
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 10px auto 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+body.resume-page #skills {
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 10px auto 0; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+body.resume-page #Certs {
+    width: 45%; 
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 10px auto 0; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+body.resume-page #references {
+    width: 45%; 
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 10px auto 0; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+body.music-page, html {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/wallpaperdotsEX.jpg'); 
+    background-size: 50%; 
+    background-position: top left; 
+    background-repeat: repeat; 
+    color: black; 
+    font-family: Arial, sans-serif;
+    padding-top: 60px; 
+}
+
+
+body.music-page #linklist {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    width: 100%; 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    z-index: 1000; 
+}
+
+body.music-page #linklist ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+body.music-page #linklist li {
+    margin: 0 15px;
+    list-style: none;
+}
+
+body.music-page #linklist a {
+    text-decoration: none;
+    color: white !important; 
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+body.music-page #linklist a:hover {
+    color: lightgray; 
+}
+
+
+body.music-page h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 70px; 
+    text-transform: uppercase;
+}
+
+body.music-page h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+body.music-page p {
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.6;
+    text-align: center;
+    color: black;
+}
+
+
+body.music-page .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+body.music-page #wren {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    max-width: 900px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+
+body.music-page #wrenimage img{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+body.music-page #wrenimage:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+body.music-page @media (max-width: 768px) {
+    #linklist {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+body.music-page #linklist li {
+        margin: 5px 0;
+    }
+
+body.music-page .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+body.art-page #wren, {
+        flex-direction: column;
+        max-width: 90%;
+        text-align: center;
+    }
+
+body.art-page img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+body.art-page, html  {
+	padding-top: 60px;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/wallpaperdotsEX.jpg');
+    background-size: 50%; 
+    background-position: top left; 
+    background-repeat: repeat; 
+}
+
+
+body.art-page #linklist {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #333; 
+    padding: 10px 20px;
+    width: 100%; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+}
+
+
+body.art-page #linklist ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+body.art-page #linklist li {
+    margin: 0 15px; 
+}
+
+body.art-page #linklist a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+
+body.art-page #linklist a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+
+body.art-page #header_image {
+    width: 100%; 
+    height: 80vh; 
+    object-fit: cover;
+    display: block;
+}
+
+body.art-page img {
+    max-width: 100%;
+    height: auto;
+}
+
+body.art-page .center-button {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+body.art-page .center-button a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+body.art-page .center-button a:hover {
+    background-color: #555;
+}
+
+body.art-page #topper {
+    position: absolute; 
+    top: 100%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 60%; 
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
+
+body.art-page #wren {
+    margin-top: 190px; 
+}
+
+body.art-page .content-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+    gap: 20px; 
+    max-width: 100%; 
+}
+
+body.art-page #wren {
+    display: flex; 
+    align-items: center; 
+}
+
+body.art-page #wrenimage img {
+    max-width: 500px; 
+    height: auto;
+    display: block; 
+}
+
+body.art-page .text-box {
+    max-width: 50%; 
+    background: white; 
+    padding: 20px;
+    margin-left: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+body.art-page #castiel {
+    display: flex; 
+    align-items: center; 
+}
+
+body.art-page #castielimage img {
+    max-width: 500px; 
+    height: auto; 
+    display: block; 
+}
+	
+body.art-page #wormwood {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 40px auto;
+    max-width: 1000px; 
+    padding: 20px;
+}
+
+body.art-page #wormwoodimage img {
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin-right: 20px; 
+}
+
+body.art-page #wormwood .text-box {
+    max-width: 50%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
