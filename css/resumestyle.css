@@ -457,6 +457,24 @@ body.art-page #wormwood .text-box {
   background-color: #555;
 }
 
+#themeToggle {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1001;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#themeToggle:hover {
+  background-color: #555;
+}
+
 :root {
   --bg-color: #ffffff;
   --text-color: #000000;
