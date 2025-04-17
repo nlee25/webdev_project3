@@ -1,6 +1,7 @@
 
-const music = new Audio('music/ArknightsEP-Ensheath.mp3');
+const music = new Audio('music/endfeild.mp3');
 music.loop = true; 
+
 
 const musicToggleBtn = document.getElementById('musicToggle');
 
