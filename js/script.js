@@ -1,16 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const audio = new Audio('music/your-audio-file.mp3'); // Replace with your audio file path
-  const button = document.getElementById('musicToggle');
-  let isPlaying = false;
+  const musicToggle = document.getElementById('musicToggle');
+  const backgroundMusic = document.getElementById('backgroundMusic');
 
-  button.addEventListener('click', () => {
-    if (isPlaying) {
-      audio.pause();
-      button.textContent = '🎵 Play Music';
+  musicToggle.addEventListener('click', () => {
+    if (backgroundMusic.paused) {
+      backgroundMusic.play();
+      musicToggle.textContent = '⏸️ Pause Music';
     } else {
-      audio.play();
-      button.textContent = '⏸️ Pause Music';
+      backgroundMusic.pause();
+      musicToggle.textContent = '🎵 Play Music';
     }
-    isPlaying = !isPlaying;
   });
 });
