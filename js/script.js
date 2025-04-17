@@ -1,17 +1,16 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const audio = new Audio('music/your-audio-file.mp3'); // Replace with your audio file path
+  const button = document.getElementById('musicToggle');
+  let isPlaying = false;
 
-const music = new Audio('music/endfeild.mp3');
-music.loop = true; 
-
-
-const musicToggleBtn = document.getElementById('musicToggle');
-
-
-musicToggleBtn.addEventListener('click', () => {
-  if (music.paused) {
-    music.play();
-    musicToggleBtn.textContent = '⏸️ Pause Music';
-  } else {
-    music.pause();
-    musicToggleBtn.textContent = '🎵 Play Music';
-  }
+  button.addEventListener('click', () => {
+    if (isPlaying) {
+      audio.pause();
+      button.textContent = '🎵 Play Music';
+    } else {
+      audio.play();
+      button.textContent = '⏸️ Pause Music';
+    }
+    isPlaying = !isPlaying;
+  });
 });
