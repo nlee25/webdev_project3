@@ -12,3 +12,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const themeToggle = document.getElementById('themeToggle');
+  const currentTheme = localStorage.getItem('theme') || 'light';
+  document.documentElement.setAttribute('data-theme', currentTheme);
+  updateBackgroundImage(currentTheme);
+
+  themeToggle.addEventListener('click', () => {
+    let theme = document.documentElement.getAttribute('data-theme');
+    theme = theme === 'light' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    updateBackgroundImage(theme);
+  });
+
+  function updateBackgroundImage(theme) {
+    const body = document.body;
+    if (theme === 'dark') {
+      body.style.backgroundImage = "url('../images/dots inverted.png')";
+    } else {
+      body.style.backgroundImage = "url('../images/wallpaperdotsEX.jpg')";
+    }
+  }
+});
