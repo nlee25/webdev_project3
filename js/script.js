@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
 if (document.getElementById("map")) {
   const gmapScript = document.createElement("script");
   gmapScript.src =
-    "https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE&callback=initMap";
+    "https://maps.googleapis.com/maps/api/js?key=AIzaSyBDZUZAmzQkSGM6rAMR4neQ_Spa51W9Kfg&callback=initMap";
   gmapScript.async = true;
   gmapScript.defer = true;
   document.body.appendChild(gmapScript);
