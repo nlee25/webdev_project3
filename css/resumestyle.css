@@ -240,7 +240,7 @@ body.music-page .content-container {
         align-items: center;
     }
   
-body.art-page #wren, {
+body.art-page #wren {
         flex-direction: column;
         max-width: 90%;
         text-align: center;
