@@ -2,39 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/moron.png">
-  <title>Map</title>
-  <link rel="stylesheet" href="css/resumestyle.css">
-  <style>
-    /* Ensure the map container takes full viewport height */
-    #map {
-      height: 100vh;
-      width: 100%;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maps</title>
+  <link rel="stylesheet" href="resumestyle.css">
+  <link rel="stylesheet" href="styles/reset.css">
+  <script async src="script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlZycOZbi9gslDsuixG48rMLPNSsHnqDg&callback=initMap" async defer></script>
 </head>
-<body class="map-page">
-  <header>
-    <nav id="linklist">
+<body>
+  <nav id="nav-bar">
+    <div id="nav-container">
       <ul>
         <li><a href="index.html">Resume</a></li>
         <li><a href="artwork.html">Artwork</a></li>
         <li><a href="aksoundtrack.html">Best of Arknights Soundtrack</a></li>
         <li><a href="map.html">Map</a></li>
+        <li><button onclick="theme()">&#x2600;</button></li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
-  <!-- Map container -->
   <div id="map"></div>
 
-  <!-- Google Maps API -->
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
-    defer
-  ></script>
-
-  <!-- External JavaScript -->
-  <script src="script.js"></script>
+  <script>
+    function initMap() {
+      const location = { lat: 37.7749, lng: -122.4194 }; // San Francisco
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 12,
+        center: location,
+      });
+      new google.maps.Marker({
+        position: location,
+        map: map,
+      });
+    }
+  </script>
 </body>
 </html>
+
+
+
