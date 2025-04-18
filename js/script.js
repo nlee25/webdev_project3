@@ -38,15 +38,45 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-let map;
+//map attempt 5 or some
 
-async function initMap() {
-  const { Map } = await google.maps.importLibrary("maps");
 
-  map = new Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
+  if (document.getElementById("map")) {
+    const gmapScript = document.createElement("script");
+    gmapScript.src =
+      "https://maps.googleapis.com/maps/api/js?key=AIzaSyCdK8_tTlj5Kt4zu_IMYgqnOI3itIl0NEw&callback=initMap";
+    gmapScript.async = true;
+    gmapScript.defer = true;
+    document.body.appendChild(gmapScript);
+  }
+});
+
+
+function initMap() {
+  const location = { lat: 41.8781, lng: -87.6298 }; // Chicago
+
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 12,
+    center: location,
   });
-}
 
-initMap();
+
+  const marker = new google.maps.Marker({
+    position: location,
+    map: map,
+    title: "Here",
+  });
+
+
+  const infoWindow = new google.maps.InfoWindow({
+    content: "<h3>Our Office</h3><p>This is where we're located.</p>",
+  });
+
+  marker.addListener("click", () => {
+    infoWindow.open(map, marker);
+  });
+
+
+  const trafficLayer = new google.maps.TrafficLayer();
+  trafficLayer.setMap(map);
+}
