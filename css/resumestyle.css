@@ -225,30 +225,25 @@ body.music-page #wrenimage:hover{
 }
 
 
-body.music-page @media (max-width: 768px) {
+@media (max-width: 768px) {
     #linklist {
         flex-direction: column;
         text-align: center;
     }
     
-body.music-page #linklist li {
+#linklist li {
         margin: 5px 0;
-    }
+}
 
-body.music-page .content-container {
+.content-container {
         flex-direction: column;
         align-items: center;
     }
   
-body.art-page #wren {
+#wren {
         flex-direction: column;
         max-width: 90%;
         text-align: center;
-    }
-
-body.art-page img {
-        max-width: 100%;
-        height: auto;
     }
 }
 
