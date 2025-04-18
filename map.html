@@ -1,44 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maps</title>
-  <link rel="stylesheet" href="resumestyle.css">
-  <link rel="stylesheet" href="styles/reset.css">
-  <script async src="script.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlZycOZbi9gslDsuixG48rMLPNSsHnqDg&callback=initMap" async defer></script>
-</head>
-<body>
-  <nav id="nav-bar">
-    <div id="nav-container">
-      <ul>
-        <li><a href="index.html">Resume</a></li>
-        <li><a href="artwork.html">Artwork</a></li>
-        <li><a href="aksoundtrack.html">Best of Arknights Soundtrack</a></li>
-        <li><a href="map.html">Map</a></li>
-        <li><button onclick="theme()">&#x2600;</button></li>
-      </ul>
-    </div>
-  </nav>
+<html>
+  <head>
+    <title>Simple Map</title>
 
-  <div id="map"></div>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <div id="map"></div>
 
-  <script>
-    function initMap() {
-      const location = { lat: 37.7749, lng: -122.4194 }; // San Francisco
-      const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 12,
-        center: location,
-      });
-      new google.maps.Marker({
-        position: location,
-        map: map,
-      });
-    }
-  </script>
-</body>
+    <!-- prettier-ignore -->
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly"});</script>
+  </body>
 </html>
 
 
 
+<!--https://maps.googleapis.com/maps/api/js?key=AIzaSyAlZycOZbi9gslDsuixG48rMLPNSsHnqDg&callback=initMap--!>

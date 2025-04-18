@@ -38,33 +38,15 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-function initMap() {
-  const location = { lat: 41.8781, lng: -87.6298 }; // Example coordinates (Chicago, IL)
+let map;
 
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 12,
-    center: location,
-  });
+async function initMap() {
+  const { Map } = await google.maps.importLibrary("maps");
 
-  const marker = new google.maps.Marker({
-    position: location,
-    map: map,
-    title: "Chicago",
-  });
-
-  const infoWindowContent = `
-    <div>
-      <h2>Disney Land</h2>
-      <p>Very fun.</p>
-      <a href="https://www.google.com/maps/dir/?api=1&destination=41.8781,-87.6298" target="_blank">Get Directions</a>
-    </div>
-  `;
-
-  const infoWindow = new google.maps.InfoWindow({
-    content: infoWindowContent,
-  });
-
-  marker.addListener("click", () => {
-    infoWindow.open(map, marker);
+  map = new Map(document.getElementById("map"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
   });
 }
+
+initMap();
