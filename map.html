@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>My Location Map</title>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/moron.png">
+  <title>Map</title>
+  <link rel="stylesheet" href="css/resumestyle.css">
   <style>
+    /* Ensure the map container takes full viewport height */
     #map {
       height: 100vh;
       width: 100%;
     }
   </style>
 </head>
-<body>
+<body class="map-page">
+  <header>
+    <nav id="linklist">
+      <ul>
+        <li><a href="index.html">Resume</a></li>
+        <li><a href="artwork.html">Artwork</a></li>
+        <li><a href="aksoundtrack.html">Best of Arknights Soundtrack</a></li>
+        <li><a href="map.html">Map</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Map container -->
   <div id="map"></div>
 
   <!-- Google Maps API -->
@@ -20,6 +35,6 @@
   ></script>
 
   <!-- External JavaScript -->
-  <script src="map.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
