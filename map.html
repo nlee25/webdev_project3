@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Location Map</title>
+  <style>
+    /* Set the size of the map container */
+    #map {
+      height: 100vh;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Map container -->
+  <div id="map"></div>
+
+  <!-- Load the Google Maps JavaScript API -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    defer
+  ></script>
+  <!-- Link to the external JavaScript file -->
+  <script src="map.js"></script>
+</body>
+</html>
