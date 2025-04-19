@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// ========== Load Google Maps ==========
+
 if (document.getElementById("map")) {
   const gmapScript = document.createElement("script");
   gmapScript.src =
@@ -54,7 +54,7 @@ if (document.getElementById("map")) {
   document.body.appendChild(gmapScript);
 }
 
-// ========== Initialize Google Map ==========
+
 window.initMap = function () {
   const location = { lat: 41.8781, lng: -87.6298 }; // Chicago
 
@@ -70,7 +70,7 @@ window.initMap = function () {
   });
 
   const infoWindow = new google.maps.InfoWindow({
-    content: "<h3>Our Office</h3><p>This is where we're located.</p>",
+    content: "<h3>Our Office</h3><p>yo</p>",
   });
 
   marker.addListener("click", () => {
