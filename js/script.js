@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// ========== Theme Toggle ==========
+
 document.addEventListener('DOMContentLoaded', () => {
   const themeToggle = document.getElementById('themeToggle');
   const currentTheme = localStorage.getItem('theme') || 'light';
@@ -56,7 +56,7 @@ if (document.getElementById("map")) {
 
 
 window.initMap = function () {
-  const location = { lat: 41.8781, lng: -87.6298 }; // Chicago
+  const location = { lat: 41.8781, lng: -87.6298 };
 
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 12,
