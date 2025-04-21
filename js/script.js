@@ -1,4 +1,4 @@
-// ========== Music Toggle ==========
+//broken theme button 
 document.addEventListener('DOMContentLoaded', () => {
   const musicToggle = document.getElementById('musicToggle');
   const backgroundMusic = document.getElementById('backgroundMusic');
